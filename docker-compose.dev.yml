@@ -44,6 +44,7 @@ services:
   cubejs:
     build:
       context: ./services/cubejs
+      dockerfile: Dockerfile.development
     restart: always
     command: yarn start.dev
     volumes:
@@ -65,6 +66,7 @@ services:
   cubejs_refresh_worker:
     build:
       context: ./services/cubejs
+      dockerfile: Dockerfile.development
     restart: always
     command: yarn start.dev
     volumes:

@@ -1,0 +1,7 @@
+{
+  "watch": ["src", "index.ts", "tsconfig.json"],
+  "ext": "ts,js,d.ts",
+  "ignore": ["idl"],
+  "exec": "NODE_OPTIONS='--inspect=0.0.0.0 --max-old-space-size=8096 --max-http-header-size=32768' npx ts-node --files ./src/index.ts",
+  "legacyWatch": true
+}
